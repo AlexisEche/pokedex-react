@@ -9,7 +9,7 @@ const PokedexApp = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar />    
       <div className="columns">
         <div className="column is-8">
           <CurrentPokemon namePokemon={selectedPokemon} />
