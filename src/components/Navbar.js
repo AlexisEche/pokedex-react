@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/Header.scss'
 import CurrentHour from './CurrentHour';
 
@@ -12,4 +12,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

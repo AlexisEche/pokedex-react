@@ -1,12 +1,12 @@
 import React from 'react';
-import BoxHeight from './BoxHeight';
+import PhisicalAttibute from './PhisicalAttibute';
 
 const BoxAnatomy = () =>{
 
   return (
     <>
-      <BoxHeight theHeight="Altura"/>
-      <BoxHeight theHeight="Peso"/>
+      <PhisicalAttibute title="Altura" value="1 m"/>
+      <PhisicalAttibute title="Peso" value="1 Kg"/>
     </>
   );
 }

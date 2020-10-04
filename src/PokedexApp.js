@@ -1,10 +1,24 @@
-import React from 'react';
-import './Pokedex.sass'
-import BoxAnatomy from './components/BoxAnatomy';
+import React, { useState } from 'react';
+
+import Navbar from './components/Navbar';
+import { CurrentPokemon } from './components/CurrentPokemon';
+import { ListPokemon } from './components/ListPokemon';
 
 const PokedexApp = () => {
+  const [selectedPokemon, setSelectedPokemon] = useState("totodile");
+
   return (
-    <BoxAnatomy />
+    <div>
+      <Navbar />
+      <div className="columns">
+        <div className="column is-8">
+          <CurrentPokemon namePokemon={selectedPokemon} />
+        </div>
+        <div className="column is-4">
+          <ListPokemon setSelectedPokemon={setSelectedPokemon} />
+        </div>
+      </div>
+    </div>
   )
 }
 
