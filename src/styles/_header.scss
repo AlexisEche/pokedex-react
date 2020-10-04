@@ -1,0 +1,16 @@
+h1 {
+  color: grey;
+}
+
+#navbar {
+  background: lightblue;
+  display: flex;
+}
+#navbar h1 {
+  flex: 1;
+  margin: 1rem;
+}
+
+#navbar:nth-child(2) {
+  margin: 1rem;
+}
