@@ -4,9 +4,7 @@ import BoxAnatomy from './components/BoxAnatomy';
 
 const PokedexApp = () => {
   return (
-
       <BoxAnatomy />
-
   )
 }
 
