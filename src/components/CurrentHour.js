@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/Header.scss'
+
 const CurrentHour = () => {
 
-    const [time, setTime] = useState(new Date().toLocaleTimeString())
+  const [time, setTime] = useState(new Date().toLocaleTimeString())
 
-    useEffect(() => {
-        const currentTime = () => {
-            setTime(new Date().toLocaleTimeString())
-        }
-        setInterval(() => currentTime(), 1000)
+  useEffect(() => {
+    const currentTime = () => {
+      setTime(new Date().toLocaleTimeString())
+    }
+    setInterval(() => currentTime(), 1000)
 
-    }, []);
-    return (
-        <>
-            <div id='navbar'>
-                <p>{time}</p>
-            </div>
-        </>
-    )
+  }, []);
+
+  return (
+    <p className='time'>{time}</p>
+  )
 }
 
 
