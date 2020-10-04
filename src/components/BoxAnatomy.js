@@ -8,7 +8,7 @@ const BoxAnatomy = () =>{
       <BoxHeight theHeight="Altura"/>
       <BoxHeight theHeight="Peso"/>
     </>
-    );
+  );
 }
 
 export default BoxAnatomy;
