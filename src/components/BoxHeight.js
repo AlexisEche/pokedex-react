@@ -11,7 +11,7 @@ const BoxHeight = (props) => {
         </span> {props.theHeight}
       </a>
     </div>
-    );
+  );
 }
 
 export default BoxHeight;
