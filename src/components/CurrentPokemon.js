@@ -12,25 +12,31 @@ export const CurrentPokemon = ({ namePokemon }) => {
 
   return (
     <div className="container">
-      <HeaderPokemon
-        number={pokemon.number}
-        name={pokemon.name}
-        mainType={pokemon.mainType}
-      />
-      <div class="columns">
-        <div class="column is-2">
-          <BoxAnatomy />
-        </div>
-        <div class="column is-8">
-          Totodile Image
-        </div>
-        <div class="column is-2">
-          Types
+      <div className="columns">
+        <div className="column is-12">
+          <HeaderPokemon
+            number={pokemon.number}
+            name={pokemon.name}
+            mainType={pokemon.mainType}
+          />
         </div>
       </div>
-      <div class="columns">
-        <div class="column">
-        Abilities
+      <div className="container">
+        <div className="columns">
+          <div className="column is-3">
+            <BoxAnatomy />
+          </div>
+          <div className="column is-7">
+            Totodile Image
+        </div>
+          <div className="column is-2">
+            Types
+        </div>
+        </div>
+      </div>
+      <div className="columns">
+        <div className="column">
+          Abilities
           </div>
       </div>
     </div>
