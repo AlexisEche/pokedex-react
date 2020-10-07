@@ -1,6 +1,8 @@
 import React from 'react';
 import { HeaderPokemon } from './HeaderPokemon';
 import BoxAnatomy from './BoxAnatomy';
+
+import Type from './Type';
 import { BoxAbilities } from './BoxAbilities';
 
 export const CurrentPokemon = ({ namePokemon }) => {
@@ -31,8 +33,8 @@ export const CurrentPokemon = ({ namePokemon }) => {
             Totodile Image
         </div>
           <div className="column is-2">
-            Types
-        </div>
+            <Type />
+          </div>
         </div>
       </div>
       <div className="columns">

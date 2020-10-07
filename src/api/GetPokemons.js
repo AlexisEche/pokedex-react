@@ -1,23 +1,19 @@
 
-import { GetAbilites } from "./GetAbilities";
+import { GetImages } from "./GetImages";
 
-export const GetPokemons = async() => {
+export const GetPokemons = async () => {
 
-    const url = `https://pokeapi.co/api/v2/pokemon/`;
-    const res = await fetch(url);
-    const {results} = await res.json();
+  const url = `https://pokeapi.co/api/v2/pokemon/`;
+  const res = await fetch(url);
+  const { results } = await res.json();
+  let pokes = [];
 
-    /* return console.log(results); */
-    const pokes = results.map( poke =>{
-        const imgReceived = GetAbilites(poke.url).then();
-        console.log(imgReceived)
-        return {
-            id: poke.name,
-            name: poke.name,
-            image: imgReceived      
-        }
+  for (const poke of results) {
+    const imgReceived = await GetImages(poke.url);
+    pokes.push({
+      id: poke.name,
+      name: poke.name,
+      image: imgReceived,
     });
-    //console.log(pokes)
-    return pokes;
-
-}
+  }
+  return pokes;

@@ -6,20 +6,19 @@ export const ListPokemon = () => {
 
   const [pokemons, setPokemons] = useState([]);
 
-  useEffect(() =>{
+  useEffect(() => {
     GetPokemons()
       .then(setPokemons)
-  },[])
-  console.log(pokemons);
+  }, []);
   return (
     <div>
       <ul>
         {
-          pokemons.map(poke => {
-            return <Pokemon key={poke.id} name={poke.name}/>
-          })
-        } 
-      </ul> 
+          pokemons.map(poke => (
+            <Pokemon key={poke.id} name={poke.name} image={poke.image} />
+          ))
+        }
+      </ul>
     </div>
   )
 }
