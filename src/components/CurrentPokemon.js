@@ -2,6 +2,7 @@ import React from 'react';
 import { HeaderPokemon } from './HeaderPokemon';
 import BoxAnatomy from './BoxAnatomy';
 import Type from './Type';
+import { BoxAbilities } from './BoxAbilities';
 
 export const CurrentPokemon = ({ namePokemon }) => {
 
@@ -37,8 +38,8 @@ export const CurrentPokemon = ({ namePokemon }) => {
       </div>
       <div className="columns">
         <div className="column">
-          Abilities
-          </div>
+          <BoxAbilities />
+        </div>
       </div>
     </div>
   )
