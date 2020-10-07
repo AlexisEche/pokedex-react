@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const Pokemon = ({ id, name, image }) => {
-
   return (
     <div className="card">
       <div className="card-content">

@@ -10,7 +10,6 @@ export const ListPokemon = () => {
     GetPokemons()
       .then(setPokemons)
   }, []);
-
   return (
     <div>
       <ul>

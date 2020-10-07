@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeaderPokemon } from './HeaderPokemon';
 import BoxAnatomy from './BoxAnatomy';
+
 import Type from './Type';
 import { BoxAbilities } from './BoxAbilities';
 

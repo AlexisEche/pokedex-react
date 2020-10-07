@@ -1,3 +1,4 @@
+
 import { GetImages } from "./GetImages";
 
 export const GetPokemons = async () => {
@@ -16,5 +17,3 @@ export const GetPokemons = async () => {
     });
   }
   return pokes;
-
-}
